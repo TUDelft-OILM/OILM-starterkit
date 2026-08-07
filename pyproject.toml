@@ -3,13 +3,14 @@ requires = ["hatchling", "hatch-vcs"]
 build-backend = "hatchling.build"
 
 [project]
-name = "teachbooks-favourites"
+name = "OILM-starterkit"
 dynamic=["version"]
-description = "A collection of our favourite Sphinx extensions for use in JupyterBooks."
+description = "Starterkit collection of extensions for Open Interactive Learning Modules (OILM) made using JupyterBook v1 / TeachBooks at Delft University of Technology."
 readme = "README.md"
 license = { file = "LICENSE" }
 authors = [
-    { name = "Dennis den Ouden-van der Horst", email = "d.denouden-vanderhorst@tudelft.nl" }
+    { name = "Dennis den Ouden-van der Horst", email = "d.denouden-vanderhorst@tudelft.nl" },
+    { name = "Tom van Woudenberg", email = "t.r.vanwoudenberg@tudelft.nl" }
 ]
 dependencies = [
     "sphinx",
@@ -43,7 +44,7 @@ requires-python = ">=3.10"
 
 [tool.hatch]
 version.source = "vcs"
-build.hooks.vcs.version-file = "src/teachbooks_favourites/_version.py"
+build.hooks.vcs.version-file = "src/OILM_starterkit/_version.py"
 
 [tool.hatch.metadata]
 allow-direct-references = true
