@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 """
-teachbooks_favourites
-~~~~~~~~~~~~~~~~~~~~~
+OILM_starterkit
+~~~~~~~~~~~~~~~
 
-A collection of our favourite Sphinx extensions for use in JupyterBooks.
+The starterkit collection of extensions for Open Interactive Learning Modules (OILM) made using JupyterBook v1 / TeachBooks at Delft University of Technology.
 
 """
 
@@ -42,8 +42,8 @@ ALL_EXTENSIONS: List[str] = [
 
 
 def setup(app: Sphinx) -> Dict[str, Any]:
-    app.add_config_value("teachbooks_favourites_include", [], "env")
-    app.add_config_value("teachbooks_favourites_exclude", [], "env")
+    app.add_config_value("OILM_starterkit_include", [], "env")
+    app.add_config_value("OILM_starterkit_exclude", [], "env")
 
     # app.config attributes still reflect defaults here because config.init_values()
     # has not yet run when setup() is called.  To replicate what init_values() will
@@ -57,18 +57,18 @@ def setup(app: Sphinx) -> Dict[str, Any]:
     raw: Dict[str, Any] = getattr(app.config, "_raw_config", {})
     overrides: Dict[str, Any] = getattr(app.config, "overrides", {})
     include: List[str] = overrides.get(
-        "teachbooks_favourites_include",
-        raw.get("teachbooks_favourites_include", []),
+        "OILM_starterkit_include",
+        raw.get("OILM_starterkit_include", []),
     )
     exclude: List[str] = overrides.get(
-        "teachbooks_favourites_exclude",
-        raw.get("teachbooks_favourites_exclude", []),
+        "OILM_starterkit_exclude",
+        raw.get("OILM_starterkit_exclude", []),
     )
 
     if include and exclude:
         raise ConfigError(
-            "teachbooks_favourites: 'teachbooks_favourites_include' and "
-            "'teachbooks_favourites_exclude' cannot both be set. "
+            "OILM_starterkit: 'OILM_starterkit_include' and "
+            "'OILM_starterkit_exclude' cannot both be set. "
             "Use one or the other."
         )
 
@@ -84,14 +84,14 @@ def setup(app: Sphinx) -> Dict[str, Any]:
                 unrecognised.append(ext)
         if typos:
             logger.warning(
-                "teachbooks_favourites: unknown extension(s) in "
-                "'teachbooks_favourites_include' will be corrected as follows:\n%s",
+                "OILM_starterkit: unknown extension(s) in "
+                "'OILM_starterkit_include' will be corrected as follows:\n%s",
                 "\n".join(typos),
             )
         if unrecognised:
             raise ConfigError(
-                f"teachbooks_favourites: unknown extension(s) in "
-                f"'teachbooks_favourites_include': {unrecognised}. "
+                f"OILM_starterkit: unknown extension(s) in "
+                f"'OILM_starterkit_include': {unrecognised}. "
                 f"Valid names are: {ALL_EXTENSIONS}"
             )
 
@@ -107,14 +107,14 @@ def setup(app: Sphinx) -> Dict[str, Any]:
                 unrecognised.append(ext)
         if typos:
             logger.warning(
-                "teachbooks_favourites: unknown extension(s) in "
-                "'teachbooks_favourites_exclude' will be corrected as follows:\n%s",
+                "OILM_starterkit: unknown extension(s) in "
+                "'OILM_starterkit_exclude' will be corrected as follows:\n%s",
                 "\n".join(typos),
             )
         if unrecognised:
             raise ConfigError(
-                f"teachbooks_favourites: unknown extension(s) in "
-                f"'teachbooks_favourites_exclude': {unrecognised}. "
+                f"OILM_starterkit: unknown extension(s) in "
+                f"'OILM_starterkit_exclude': {unrecognised}. "
                 f"Valid names are: {ALL_EXTENSIONS}"
             )
 
