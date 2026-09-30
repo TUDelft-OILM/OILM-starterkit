@@ -35,7 +35,7 @@ dependencies = [
     "sphinx-last-updated-by-git @ git+https://github.com/TeachBooks/sphinx-last-updated-by-git@986142b",
     "sphinx-gated-directives==v1.1.2",
     "teachbooks-zoomies==0.2.4",
-    "teachbooks-questions==0.2.1",
+    "teachbooks-questions==0.3.2",
     "sphinx-sticky-margin==1.1.4",
     "teachbooks-fetch==0.0.1"
 ]
