@@ -38,6 +38,8 @@ ALL_EXTENSIONS: List[str] = [
     "sphinx_sticky_margin",
     "teachbooks_fetch",
     "sphinx.ext.todo",
+    "sphinx_apa_references",
+    "sphinx_tudelft_theme",
 ]
 
 

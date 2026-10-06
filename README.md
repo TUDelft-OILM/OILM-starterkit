@@ -148,6 +148,20 @@ This Sphinx extension provides a single extension that includes and activates Sp
   * Extension name: `sphinx.ext.todo`
   * Repository: https://github.com/sphinx-doc/sphinx/blob/master/sphinx/ext/todo.py
   * Manual: https://www.sphinx-doc.org/en/master/usage/extensions/todo.html
+ 
+* Sphinx TU Delft theme
+
+  * Adds TU Delft styling to your OILM
+  * Extension name: `sphinx_tudelft_theme`
+  * Repository: https://github.com/TeachBooks/Sphinx-TUDelft-theme
+  * Manual: https://teachbooks.io/manual/external/Sphinx-TUDelft-theme/README.html
+ 
+* Sphinx APA references
+
+  * Adds APA-style referencing to your book
+  * Extension name: `sphinx_apa_references`
+  * Repository: https://github.com/TeachBooks/Sphinx-APA-References
+  * Manual: https://teachbooks.io/manual/features/apa.html
 
 ## Installation
 

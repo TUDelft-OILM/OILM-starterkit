@@ -37,7 +37,9 @@ dependencies = [
     "teachbooks-zoomies==0.2.4",
     "teachbooks-questions==0.3.2",
     "sphinx-sticky-margin==1.1.4",
-    "teachbooks-fetch==0.0.1"
+    "teachbooks-fetch==0.0.1",
+    "sphinx-tudelft-theme==1.2.2",
+    "sphinx-apa-references==1.0.1"
 ]
 
 requires-python = ">=3.10"
